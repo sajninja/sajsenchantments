@@ -1,0 +1,25 @@
+{
+    "item.devoted_item_return":{
+        "subtitle": "Item returns",
+        "sounds":[
+            "devoted_item_return"
+        ]
+    },
+    "item.devoted_item_binds":{
+        "subtitle": "Item binds",
+        "sounds":[
+            "devoted_item_binds"
+        ]
+    },
+    "item.devoted_item_binds_2":{
+        "sounds":[
+            "devoted_item_binds_2"
+        ]
+    },
+    "item.devoted_return_fail":{
+        "subtitle": "Return fails",
+        "sounds":[
+            "devoted_return_fail"
+        ]
+    }
+}
