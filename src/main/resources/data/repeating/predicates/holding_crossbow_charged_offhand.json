@@ -1,0 +1,33 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",Count:1b,tag:{Charged:1b,Enchantments:[{lvl:1s,id:\"sajsenchantments:repeating\"}]}}]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",Count:1b,tag:{Charged:1b,Enchantments:[{lvl:2s,id:\"sajsenchantments:repeating\"}]}}]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",Count:1b,tag:{Charged:1b,Enchantments:[{lvl:3s,id:\"sajsenchantments:repeating\"}]}}]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",Count:1b,tag:{Charged:1b,Enchantments:[{lvl:4s,id:\"sajsenchantments:repeating\"}]}}]}"
+            }
+        }
+    ]
+}

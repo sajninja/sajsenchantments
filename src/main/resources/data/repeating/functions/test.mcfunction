@@ -1,0 +1,1 @@
+execute if data entity @s Offers.Recipes.[2].sell{id:"minecraft:enchanted_book",Count:1b} unless data entity @s Offers.Recipes.[2].sell.tag.RepeatingModified run data modify entity @s Offers.Recipes.[2].sell{} set value {id:"minecraft:enchanted_book",Count:1b,tag:{display:{Lore:['[{"text": "Repeating", "color": "gray", "italic": false}]']}}}

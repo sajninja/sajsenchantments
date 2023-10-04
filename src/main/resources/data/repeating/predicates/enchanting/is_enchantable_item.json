@@ -1,0 +1,57 @@
+[
+    {
+        "condition": "any_of",
+        "terms": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Item:{id:\"minecraft:crossbow\",Count:1b}}"
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Item:{id:\"minecraft:enchanted_book\",Count:1b,tag:{Enchantments:[{lvl:1s,id:\"sajsenchantments:repeating\"}]}}}"
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Item:{id:\"minecraft:enchanted_book\",Count:1b,tag:{Enchantments:[{lvl:2s,id:\"sajsenchantments:repeating\"}]}}}"
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Item:{id:\"minecraft:enchanted_book\",Count:1b,tag:{Enchantments:[{lvl:3s,id:\"sajsenchantments:repeating\"}]}}}"
+                }
+            }
+        ]
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "minecraft:any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Item:{tag:{Enchantments:[{id:\"minecraft:piercing\"}]}}}"
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Item:{tag:{Enchantments:[{id:\"minecraft:multishot\"}]}}}"
+                    }
+                }
+            ]
+        }
+    }
+]

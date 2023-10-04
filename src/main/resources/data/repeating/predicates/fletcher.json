@@ -1,0 +1,16 @@
+[
+	{
+		"condition": "minecraft:entity_properties",
+		"entity": "this",
+		"predicate": {
+			"nbt": "{VillagerData:{\"profession\": \"minecraft:fletcher\"}}"
+		}
+	},
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "nbt": "{Offers:{Recipes:[{sell:{id:\"minecraft:crossbow\",Count:1b,tag:{Enchantments:[{}]}}}]}}"
+        }
+    }
+]

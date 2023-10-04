@@ -1,0 +1,16 @@
+[
+	{
+		"condition": "minecraft:entity_properties",
+		"entity": "this",
+		"predicate": {
+			"nbt": "{VillagerData:{\"profession\": \"minecraft:librarian\"}}"
+		}
+	},
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "nbt": "{Offers:{Recipes:[{sell:{id:\"minecraft:enchanted_book\",Count:1b}}]}}"
+        }
+    }
+]

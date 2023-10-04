@@ -1,0 +1,11 @@
+execute at @e[type=armor_stand,tag=repeating_stand] if score @s repeating.uuid_score = @e[type=armor_stand,tag=repeating_stand,limit=1,sort=nearest] repeating.uuid_score run tp @e[type=armor_stand,tag=repeating_stand,limit=1,sort=nearest,distance=999.9..1000.1] ~ ~ ~
+
+execute if entity @s[predicate=repeating:holding_crossbow_mainhand] at @e[type=armor_stand,tag=repeating_stand] if score @s repeating.uuid_score = @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] repeating.uuid_score as @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] run item modify entity @s weapon.mainhand repeating:reload_mainhand
+execute if entity @s[predicate=repeating:holding_crossbow_offhand] at @e[type=armor_stand,tag=repeating_stand] if score @s repeating.uuid_score = @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] repeating.uuid_score as @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] run item modify entity @s weapon.offhand repeating:reload_offhand
+
+execute if entity @s[predicate=repeating:holding_crossbow_mainhand] at @e[type=armor_stand,tag=repeating_stand] if score @s repeating.uuid_score = @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] repeating.uuid_score run item replace entity @s weapon.mainhand from entity @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] weapon.mainhand
+execute if entity @s[predicate=repeating:holding_crossbow_offhand,predicate=!repeating:holding_crossbow_mainhand] at @e[type=armor_stand,tag=repeating_stand] if score @s repeating.uuid_score = @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] repeating.uuid_score run item replace entity @s weapon.offhand from entity @e[type=armor_stand,tag=repeating_stand,distance=..0.01,limit=1,sort=nearest] weapon.offhand
+
+playsound minecraft:item.crossbow.loading_end ambient @a ~ ~ ~ 1 1
+
+data merge entity @e[type=#arrows,limit=1,sort=nearest,nbt={inGround:0b}] {pickup:2b}

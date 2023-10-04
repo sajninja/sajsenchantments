@@ -1,0 +1,72 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{SelectedItem:{id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:1s,id:\"sajsenchantments:repeating\"}]}}}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{SelectedItem:{id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:2s,id:\"sajsenchantments:repeating\"}]}}}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{SelectedItem:{id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:3s,id:\"sajsenchantments:repeating\"}]}}}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{SelectedItem:{id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:4s,id:\"sajsenchantments:repeating\"}]}}}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:1s,id:\"sajsenchantments:repeating\"}]}}]}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:2s,id:\"sajsenchantments:repeating\"}]}}]}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:3s,id:\"sajsenchantments:repeating\"}]}}]}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:crossbow\",tag:{Enchantments:[{lvl:4s,id:\"sajsenchantments:repeating\"}]}}]}"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

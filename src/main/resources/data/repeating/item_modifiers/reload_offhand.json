@@ -1,0 +1,54 @@
+[
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{RepeatingLevel:4}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{HandItems:[{},{tag:{RepeatingLevel:5}}]}"
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{RepeatingLevel:3}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{HandItems:[{},{tag:{RepeatingLevel:4}}]}"
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{RepeatingLevel:2}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{HandItems:[{},{tag:{RepeatingLevel:3}}]}"
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{RepeatingLevel:1}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{HandItems:[{},{tag:{RepeatingLevel:2}}]}"
+				}
+			}
+		]
+	}
+]
