@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:enchanted_book"
+      },
+      "title": "Saj\'s Enchantments",
+      "description": "By me",
+      "background": "textures/block/bookshelf.png",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "rewards": {
+      "function": "sajsenchantments:load"
+    }
+  }
+  
